@@ -35,10 +35,6 @@ namespace ProductsAPI.Controllers
             return Ok(user);
         }
 
-        [HttpGet]
-        public async Task<IActionResult> GetUsers()
-        {
-            return Ok(await dbContext.Users.ToListAsync());
-        }
+        
     }
 }

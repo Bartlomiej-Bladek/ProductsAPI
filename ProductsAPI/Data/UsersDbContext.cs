@@ -5,7 +5,7 @@ namespace ProductsAPI.Data
 {
     public class UsersDbContext : DbContext
     {
-        public UsersDbContext(DbContextOptions options) : base(options)
+        public UsersDbContext(DbContextOptions<UsersDbContext> options) : base(options)
         {
         }
 
